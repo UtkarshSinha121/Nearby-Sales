@@ -1,0 +1,23 @@
+.head2{
+   color: rgb(24, 24, 135);
+}
+.header{
+  background-color: rgb(24, 24, 135) ;
+  color: white ;
+}
+li.nav-item:hover{
+  color: black;
+}
+
+.nav-item .active{
+  font-weight: bold;
+  color: black !important;
+  border-bottom: 2px solid black;
+}
+.error-label{
+  color:red;
+  display:inline;
+  font-weight:lighter;
+  font: size 5px;
+  margin-left: 5px;
+}
