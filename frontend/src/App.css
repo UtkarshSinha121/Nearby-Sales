@@ -150,3 +150,26 @@ button.button-clr:hover{
 .font2{
   font-family: Roboto Slab;
 }
+.about{
+  font-family: RobotoCondensed;
+}
+.about-head{
+  font-family:'Lobster' ;
+  color: rgb(9, 9, 20);
+  font-size: 60px; 
+  text-shadow: 1px 1px white;
+}
+.clr-head{
+  color: black;
+  font-weight: bold;
+}
+.profile-card{
+  width: 210px;
+  height: 220px;
+}
+.user-card{
+  float: right;
+  margin-top:-1115px;
+  /* z-index: 2; */
+  margin-right: 20px;
+}

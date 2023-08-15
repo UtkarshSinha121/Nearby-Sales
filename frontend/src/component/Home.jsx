@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const Home = () => {
   return (
     <div>
-      <div>
+      <div className='position-fixed w-100 top-0 z-2'>
       <Navbar/>
       </div>
       <div className='bgimg4 '>

@@ -52,8 +52,9 @@ const Navbar = () => {
           </NavLink>
         </li>
        <li  className="nav-item mx-2 item" >
+        <Link to='/show'>
          <img className='rounded-circle' src={"http://localhost:5000/"+currentUser.image} alt="" height={40} width={40}/>
-        
+         </Link>
        </li>
       </ul>
       

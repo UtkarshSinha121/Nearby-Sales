@@ -80,7 +80,7 @@ const ManageUser = () => {
     <div>
         <header className='bg-target-tertiary'>
             <div className='container py-5'>
-                <p className='font  display-2 text-center fw-bold'>Browse Sales</p>
+                <p className='font  display-2 text-center fw-bold mt-5'>Browse Sales</p>
                 <input type="text" className='form-control w-50 m-auto' placeholder='Search Store by Location...' onChange={filterStore}/>
                 
 

@@ -86,38 +86,29 @@ const Signup = () => {
     
           </div>
           <div className='col-lg-5 '>
-      <div className=' card rounded-4 w-75 my-5 vh-50 sign-clr'>  
+      <div className=' card rounded-4 w-75 my-5 p-3 vh-50 sign-clr'>  
         <div className='card-body'>
-          <h2 className='text-center fw-bold my-1 loghead'>SIGN UP</h2>
+          <h2 className='text-center fw-bold my-1 mb-3 loghead'>SIGN UP</h2>
           <form onSubmit={signupForm.handleSubmit} >
-          <div class="d-flex align-items-center ">
-                    <i class="fas fa-user fa-lg me-3 fa-fw fw-bold "></i>
-                    <div class="form-outline flex-fill mb-3">
+                  <div class="d-flex align-items-center mb-4 ">
+                    <i class="fas fa-user fa-lg me-2 fa-fw fw-bold fa-xl "></i>                   
                     <p className='error-label'>{signupForm.touched.name ? signupForm.errors.name : ''}</p>
-                      <input type="text" id=" " class="form-control"  name="name" placeholder='Your Name' onChange={signupForm.handleChange} value={signupForm.values.name}  />
-                      
-                    </div>
+                    <input type="text" id=" " class="form-control"  name="name" placeholder='Your Name' onChange={signupForm.handleChange} value={signupForm.values.name}  />                     
                   </div>
-
-                  <div class="d-flex flex-row  align-items-center mb-1">
-                    <i class="fas fa-envelope fa-lg me-3 fa-fw fw-bold "></i>
-                    <div class="form-outline flex-fill mb-3">
+                  <div class="d-flex flex-row  align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-2 fa-fw fw-bold fa-xl "></i>                    
                     <p className='error-label'>{signupForm.touched.email ? signupForm.errors.email : ''}</p>
                       <input type="email" id="ye" class="form-control" name="email" placeholder='Email' onChange={signupForm.handleChange} value={signupForm.values.email} />
-                    </div>
                   </div>
-
-                  <div class="d-flex flex-row  align-items-center mb-1">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw fw-bold "></i>
-                    <div class="form-outline flex-fill mb-4">
+                  <div class="d-flex flex-row  align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-2 fa-fw fw-bold fa-xl "></i>                    
                     <p className='error-label'>{signupForm.touched.password ? signupForm.errors.password : ''} </p>
-                   <input type="password" id=" " class="form-control " name="password" placeholder='Password'onChange={signupForm.handleChange} value={signupForm.values.password}/> 
-                    </div>
+                    <input type="password" id=" " class="form-control " name="password" placeholder='Password'onChange={signupForm.handleChange} value={signupForm.values.password}/>                   
                   </div>
-                 <div className='d-flex  mb-4 '>
-                 <i class="fa-solid fa-arrow-up-from-bracket fw-bold mx-3"></i>
-                   <input  type="file" className='form-control w-75' placeholder='Upload Avtar' onChange={uploadFile} />
-                   </div>
+                  <div className='d-flex flex-flow align-items-center mb-4 '>
+                    <i class="fa-solid fa-arrow-up-from-bracket fw-bold fa-xl me-3 "></i>
+                    <input  type="file" className='form-control ' placeholder='Upload Avtar' onChange={uploadFile} />
+                  </div>
                   <div class="d-flex flex-row justify-content-center mx-4  ">
                     <button type="submit" class="btn button-clr btn-floating mx-1 w-100 rounded-5">Sign In</button>
                   </div>

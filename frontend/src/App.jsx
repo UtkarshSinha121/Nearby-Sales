@@ -10,6 +10,8 @@ import { Toaster } from 'react-hot-toast';
 import About from './component/About';
 import Error from './component/Error';
 import { UserProvider } from './UserContext';
+import Profile from './component/Profile';
+import ShowProfile from './component/ShowProfile';
 
 
 
@@ -30,6 +32,8 @@ function App() {
             <Route path='addproduct' element={ <AddProduct/> }/>
             <Route path='manageuser' element={ <ManageUser/>}/>
             <Route path='about' element={ <About/>}/>
+            <Route path='profile' element={ <Profile/>}/>
+            <Route path='show' element={ <ShowProfile/>}/>
             <Route path='*' element={<Error/>} />
         </Routes>
         </UserProvider> 
