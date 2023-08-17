@@ -1,4 +1,4 @@
-# SaleSpotter
+# SaleSpotter( Place to find sales near your location)
 ### On Opening the page by running the command (npm start)
 ## commands Used
 ### To run Frontend - npm start
