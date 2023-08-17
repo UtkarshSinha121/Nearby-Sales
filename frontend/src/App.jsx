@@ -12,6 +12,7 @@ import Error from './component/Error';
 import { UserProvider } from './UserContext';
 import Profile from './component/Profile';
 import ShowProfile from './component/ShowProfile';
+import UserAuth from './UserAuth';
 
 
 
@@ -28,9 +29,9 @@ function App() {
             <Route path='landing' element={ <Landing/> }/>
             <Route path='signup' element={ <Signup/> }/>
             <Route path='login' element={ <Login/> }/>
-            <Route path='home' element={ <Home/> }/>
-            <Route path='addproduct' element={ <AddProduct/> }/>
-            <Route path='manageuser' element={ <ManageUser/>}/>
+            <Route path='home' element={ <UserAuth> <Home/> </UserAuth>}/>
+            <Route path='addproduct' element={ <UserAuth> <AddProduct/> </UserAuth> }/>
+            <Route path='manageuser' element={ <UserAuth> <ManageUser/> </UserAuth>}/>
             <Route path='about' element={ <About/>}/>
             <Route path='profile' element={ <Profile/>}/>
             <Route path='show' element={ <ShowProfile/>}/>
