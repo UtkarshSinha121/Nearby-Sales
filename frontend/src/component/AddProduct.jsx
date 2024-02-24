@@ -42,7 +42,7 @@ const AddProduct = () => {
           console.log(values);
           
           //sending request to backend
-          const res = await fetch('http://localhost:5000/addproduct/add', {
+          const res = await fetch('https://salespotter.onrender.com/addproduct/add', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {
@@ -74,7 +74,7 @@ const AddProduct = () => {
         const fd = new FormData();
         fd.append('myfile', file);
     
-        const res = await fetch('http://localhost:5000/util/uploadfile', {
+        const res = await fetch('https://salespotter.onrender.com/util/uploadfile', {
           method: 'POST',
           body: fd
         });

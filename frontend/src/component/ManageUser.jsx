@@ -10,7 +10,7 @@ const ManageUser = () => {
     const [search, setsearch] = useState([]);
 
      const fetchUserData = async () => {
-        const res = await fetch('http://localhost:5000/addproduct/getall');
+        const res = await fetch('https://salespotter.onrender.com/addproduct/getall');
         console.log(res.status);
         if(res.status === 200){
             const data = await res.json();
@@ -26,7 +26,7 @@ const ManageUser = () => {
 
      const deleteUser = async (id) =>{
         console.log(id);
-        const res = await fetch('http://localhost:5000/user/delete/'+id, {method:'DELETE'});
+        const res = await fetch('https://salespotter.onrender.com/user/delete/'+id, {method:'DELETE'});
         if(res.status === 200){
             fetchUserData();
             toast.success('User Deleted Successfully');
@@ -40,7 +40,7 @@ const ManageUser = () => {
             <div className='card card-clr'>
                 <div className='d-flex'>
                     <div>
-                <img className='p-3 rounded-5' src={"http://localhost:5000/"+store.image} alt="" width={260} height={220} style={{overflow:'hidden'}} />
+                <img className='p-3 rounded-5' src={"https://salespotter.onrender.com/"+store.image} alt="" width={260} height={220} style={{overflow:'hidden'}} />
                 <h5 className='sname font2 fw-bold text-center '> {store.shopname}</h5>
                 </div>
                 <div className='card-body'>

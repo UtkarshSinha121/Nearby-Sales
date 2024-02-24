@@ -33,7 +33,7 @@ const Signup = () => {
       values.image= selImage;
       console.log(values);
 
-      const res = await fetch('http://localhost:5000/user/add', {
+      const res = await fetch('https://salespotter.onrender.com/user/add', {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -65,7 +65,7 @@ const Signup = () => {
         const fd = new FormData();
         fd.append('myfile', file);
     
-        const res = await fetch('http://localhost:5000/util/uploadfile', {
+        const res = await fetch('https://salespotter.onrender.com/util/uploadfile', {
           method: 'POST',
           body: fd
         });
