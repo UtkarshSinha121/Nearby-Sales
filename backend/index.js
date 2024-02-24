@@ -10,7 +10,7 @@ const AddproductRouter = require('./routers/addProductRouter');
 const UtilRouter = require('./routers/util');
 
 app.use(cors({
-    origin : ['http://localhost:3000','https://sale-spotter.vercel.app/']
+    origin : ['https://sale-spotter.vercel.app']
 }));
 app.use(express.json());
 
