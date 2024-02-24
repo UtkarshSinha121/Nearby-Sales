@@ -10,8 +10,6 @@ const Navbar = () => {
   const [currentUser, setcurrentUser] = useState(
     JSON.parse(sessionStorage.getItem('user'))
   )
-
-
   return (
     <div>
         <nav className="navbar navbar-expand-lg  bgcol">

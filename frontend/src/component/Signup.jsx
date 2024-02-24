@@ -16,6 +16,7 @@ const SignupSchema = Yup.object().shape({
 });
 const Signup = () => {
 
+  
   const navigate = useNavigate();
   
   const [selImage, setselImage] = useState([]);
